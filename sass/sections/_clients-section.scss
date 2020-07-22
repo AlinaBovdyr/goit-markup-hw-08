@@ -4,7 +4,7 @@
 
   &-list {
       @extend %list;
-      @include flexCenter(flex, space-between);
+      // @include flexCenter(flex, space-between);
   }
 
   &-title {
@@ -13,7 +13,7 @@
 }
 
 .clients-icon {
-  @include flexCenter;
+  // @include flexCenter;
 
   width: 170px;
   height: 90px;

@@ -1,3 +1,7 @@
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+// Color
 $text-color: #757575;
 $title-color: #212121;
 $contrast-color: #ffffff;
@@ -6,4 +10,8 @@ $icon-color: #afb1b8;
 
 $secondary-background-color: #f5f4fa;
 
-$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+// Breakpoints
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;

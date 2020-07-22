@@ -1,0 +1,37 @@
+.menu-button {
+    display: inline-flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.icon-cross {
+    display: none;
+}
+
+.menu-button.is-open .icon-menu {
+    display: none;
+}
+
+.menu-button.is-open .icon-cross {
+    display: block;
+}
+
+.menu-container {
+    display: none;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    background-color: $contrast-color;
+}
+
+.menu-container.is-open {
+    display: block;
+}

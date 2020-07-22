@@ -9,12 +9,12 @@
 
 .cards-list {
     @extend %list;
-    @include flexCenter(flex, space-between);
-    flex-wrap: wrap;
+    // @include flexCenter(flex, space-between);
+    // flex-wrap: wrap;
 }
 
 .card {
-    width: calc((100% - 2 * 30px) / 3);
+    // width: calc((100% - 2 * 30px) / 3);
     box-shadow: none;
   
     transition: box-shadow 250ms $timing-function;

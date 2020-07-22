@@ -6,8 +6,8 @@
 .flex-container {
     @extend %container;
     
-    display: flex;
-    align-items: baseline;
+    // display: flex;
+    // align-items: baseline;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -67,7 +67,7 @@
 
 // Форма подписки
 .subscribe {
-    display: flex;
+    // display: flex;
 }
   
 .subscribe-input {

@@ -4,21 +4,35 @@
 
 .header {
     @extend %container;
+    position: relative;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 60px;
 }
 
 .header,
-.navigation,
 .site-nav,
 .contacts {
-    @include flexCenter;
+    // @include flexCenter;
 }
+
 
 // Навигация сайта
 .site-nav {
     @extend %list;
+    margin-bottom: 60px;
 
-    &-item + &-item {
-        margin-left: 50px;
+    // &-item + &-item {
+    //     margin-left: 50px;
+    // }
+
+    &-item {
+        text-align: center;
+        margin-bottom: 40px;
     }
 }
 
@@ -44,16 +58,17 @@
 .site-nav .link {
     position: relative;
   
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    display: inline-block;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
+    text-align: center;
 } 
   
 .curent::after {
     content: '';
     display: block;
     position: absolute;
-    bottom: 0;
+    bottom: -100%;
 
     width: 100%;
     height: 4px;
@@ -67,17 +82,22 @@
 
     margin-left: auto;
 
-    &-item + &-item {
-        margin-left: 30px;
+    &-item {
+        text-align: center;
+        margin-bottom: 16px;
     }
 
-    &-item {
-        @include flexCenter(inline-flex);
-    }
+    // &-item + &-item {
+    //     margin-left: 30px;
+    // }
+
+    // &-item {
+    //     @include flexCenter(inline-flex);
+    // }
 }
 
 .contacts .link {    
-    @include flexCenter(inline-flex);
+    // @include flexCenter(inline-flex);
     color: $text-color; 
 }
 

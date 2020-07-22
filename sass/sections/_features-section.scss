@@ -4,7 +4,7 @@
 
     &-list {
         @extend %list;
-        @include flexCenter(flex, space-between);
+        // @include flexCenter(flex, space-between);
     }
 
     &-item {
@@ -21,7 +21,7 @@
 }
 
 .icon-box {
-    @include flexCenter;
+    // @include flexCenter;
     margin-bottom: 30px;
     width: 270px;
     height: 120px;
