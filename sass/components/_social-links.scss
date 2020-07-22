@@ -1,0 +1,30 @@
+.social-list {
+    @extend %list;
+    @include flexCenter;
+
+    &-item + &-item {
+        margin-left: 10px;
+    }
+}
+
+.social-links {
+    @include flexCenter;
+
+    width: 44px;
+    height: 44px;
+
+    border: 1px solid transparent;
+    border-radius: 50%;
+
+    color: $icon-color;
+    background-color: inherit;
+    fill: currentColor;
+
+    transition: color 250ms $timing-function,
+    background-color 250ms $timing-function;
+
+    &:hover, &:focus {
+        color: $contrast-color;
+        background-color: $accent-color;
+    }
+}

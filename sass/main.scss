@@ -1,0 +1,24 @@
+@import "./base/normalize";
+@import "./base/fonts";
+
+// Общие стили
+@import "./utils/variables";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+@import "./base/common";
+
+// Компоненты
+@import "./components/logo";
+@import "./components/button";
+@import "./components/social-links";
+@import "./components/modal";
+@import "./components/forms";
+
+// Секции
+@import "./sections/header";
+@import "./sections/hero";
+@import "./sections/features-section";
+@import "./sections/activity-section";
+@import "./sections/team-section";
+@import "./sections/clients-section";
+@import "./sections/footer";

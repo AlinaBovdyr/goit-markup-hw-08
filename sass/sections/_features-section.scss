@@ -1,0 +1,41 @@
+.features {
+    @extend %container;
+    @extend %containerPadding;
+
+    &-list {
+        @extend %list;
+        @include flexCenter(flex, space-between);
+    }
+
+    &-item {
+        width: calc((100% - 3 * 30px) / 4);
+      }
+
+    & .text {
+        margin: 0;
+    }
+}
+
+.hidden-title {
+    @extend %visually-hidden;
+}
+
+.icon-box {
+    @include flexCenter;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+  
+    background-color: $secondary-background-color;
+}
+
+.features-title {
+    @extend %primary-title;
+
+    margin-bottom: 10px;
+  
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    text-align: left; 
+}

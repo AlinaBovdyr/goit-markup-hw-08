@@ -1,0 +1,19 @@
+@import "./base/normalize";
+@import "./base/fonts";
+
+// Общие стили
+@import "./utils/variables";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+@import "./base/common";
+
+// Компоненты
+@import "./components/logo";
+@import "./components/button";
+@import "./components/social-links";
+@import "./components/filters";
+
+// Секции
+@import "./sections/header";
+@import "./sections/footer";
+@import "./sections/portfolio-section";

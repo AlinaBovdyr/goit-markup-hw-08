@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Studio</title>
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
+  </head>
+
+  <body>
+    <!-- Шапка сайта -->
+    <header class="page-header">
+      <div class="container header">
+        <nav class="navigation">
+          <!-- Логотип -->
+          <a class="logo" href="./index.html" lang="en"
+            >Web
+            <span class="header-logo">Studio</span>
+          </a>
+
+          <ul class="list site-nav">
+            <li class="site-nav-item">
+              <a class="link" href="./index.html">Студия</a>
+            </li>
+            <li class="site-nav-item">
+              <a class="link curent" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="site-nav-item">
+              <a class="link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="list contacts">
+          <li class="contacts-item">
+            <a class="link" href="mailto:info@devstudio.com">
+              <svg class="cotacts-icon" width="16" height="11.2">
+                <use href="./images/sprite.svg#envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="contacts-item phone">
+            <a class="link" href="tel:+380961111111">
+              <svg class="cotacts-icon" width="10" height="14.94">
+                <use href="./images/sprite.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="portfolio-section">
+      <section class="portfolio">
+        <!-- Скрытый заголовок -->
+        <h1 class="portfolio-title">Примеры проектов</h1>
+        <ul class="filters">
+          <li class="filters-item">
+            <label class="button">
+              <input class="button-input" name="filter" type="radio" value="all" checked />
+              <span class="button-label">Все</span>
+            </label>
+          </li>
+          <li class="filters-item">
+            <label class="button">
+              <input class="button-input" name="filter" type="radio" value="web" />
+              <span class="button-label">Веб-сайты</span>
+            </label>
+          </li>
+          <li class="filters-item">
+            <label class="button">
+              <input class="button-input" name="filter" type="radio" value="apps" />
+              <span class="button-label">Приложения</span>
+            </label>
+          </li>
+          <li class="filters-item">
+            <label class="button">
+              <input class="button-input" name="filter" type="radio" value="design" />
+              <span class="button-label">Дизайн</span>
+            </label>
+          </li>
+          <li class="filters-item">
+            <label class="button">
+              <input class="button-input" name="filter" type="radio" value="marketing" />
+              <span class="button-label">Маркетинг</span>
+            </label>
+          </li>
+        </ul>
+
+        <ul class="cards-list">
+          <li class="card">
+            <a class="link" href="">
+              <div class="thumb">
+                <img
+                  class="thumb-image"
+                  src="./images/portfolio-img/techno.jpg"
+                  alt="Страница веб-сайта на экране ноутбука"
+                  width="370"
+                  height="294"
+                />
+                <div class="overlay">
+                  <p class="overlay-text">
+                    Технокряк это современная площадка распространения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
+                </div>
+              </div>
+              <div class="image-description">
+                <h2 class="list-title">Технокряк</h2>
+                <p class="description">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+          <li class="card">
+            <a class="link" href="">
+              <div class="thumb">
+                <img
+                  class="thumb-image"
+                  src="./images/portfolio-img/poster.jpg"
+                  alt="Постер с двумя баскетболистами New Orlean vs Golden Star"
+                  width="370"
+                  height="294"
+                />
+                <div class="overlay">
+                  <p class="overlay-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Architecto, molestiae aliquam. Tempore voluptatem id
+                    suscipit.
+                  </p>
+                </div>
+              </div>
+              <div class="image-description">
+                <h2 class="list-title">Постер New Orlean vs Golden Star</h2>
+                <p class="description">Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <li class="card">
+            <a class="link" href="">
+              <div class="thumb">
+                <img
+                class="thumb-image"
+                  src="./images/portfolio-img/seafood.jpg"
+                  alt="Логотип ресторана Seafood"
+                  width="370"
+                  height="294"
+                />
+                <div class="overlay">
+                  <p class="overlay-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Architecto, molestiae aliquam. Tempore voluptatem id
+                    suscipit. Hic vel consequuntur voluptates dolor. Lorem ipsum
+                    dolor sit amet.
+                  </p>
+                </div>
+              </div>
+              <div class="image-description">
+                <h2 class="list-title">Ресторан Seafood</h2>
+                <p class="description">Приложение</p>
+              </div>
+            </a>
+          </li>
+          <li class="card">
+            <a class="link" href="">
+              <div class="thumb">
+                <img
+                class="thumb-image"
+                  src="./images/portfolio-img/prime.jpg"
+                  alt="Большие черные беспроводные наушники"
+                  width="370"
+                  height="294"
+                />
+                <div class="overlay">
+                  <p class="overlay-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Architecto, molestiae aliquam. Tempore voluptatem id
+                    suscipit. Hic vel consequuntur voluptates dolor. Lorem ipsum
+                    dolor sit amet.
+                  </p>
+                </div>
+              </div>
+              <div class="image-description">
+                <h2 class="list-title">Проект Prime</h2>
+                <p class="description">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <li class="card">
+            <a class="link" href="">
+              <div class="thumb">
+                <img 
+                class="thumb-image"
+                  src="./images/portfolio-img/boxes.jpg"
+                  alt="Две маленькие фирменные коробки на белом фоне"
+                  width="370"
+                  height="294"
+                />
+                <div class="overlay">
+                  <p class="overlay-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Architecto, molestiae aliquam. Tempore voluptatem id
+                    suscipit. Hic vel consequuntur voluptates dolor. Lorem ipsum
+                    dolor sit amet.
+                  </p>
+                </div>
+              </div>
+              <div class="image-description">
+                <h2 class="list-title">Проект Boxes</h2>
+                <p class="description">Приложение</p>
+              </div>
+            </a>
+          </li>
+          <li class="card">
+            <a class="link" href="">
+              <div class="thumb">
+                <img
+                class="thumb-image"
+                  src="./images/portfolio-img/inspiration.jpg"
+                  alt="Дизайн сайта на экране монитора"
+                  width="370"
+                  height="294"
+                />
+                <div class="overlay">
+                  <p class="overlay-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Architecto, molestiae aliquam. Tempore voluptatem id
+                    suscipit. Hic vel consequuntur voluptates dolor. Lorem ipsum
+                    dolor sit amet.
+                  </p>
+                </div>
+              </div>
+              <div class="image-description">
+                <h2 class="list-title">Inspiration has no Borders</h2>
+                <p class="description">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+          <li class="card">
+            <a class="link" href="">
+              <div class="thumb">
+                <img
+                class="thumb-image"
+                  src="./images/portfolio-img/limited-edition.jpg"
+                  alt="Открытый глянцевый журнал"
+                  width="370"
+                  height="294"
+                />
+                <div class="overlay">
+                  <p class="overlay-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Architecto, molestiae aliquam. Tempore voluptatem id
+                    suscipit. Hic vel consequuntur voluptates dolor. Lorem ipsum
+                    dolor sit amet.
+                  </p>
+                </div>
+              </div>
+              <div class="image-description">
+                <h2 class="list-title">Издание Limited Edition</h2>
+                <p class="description">Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <li class="card">
+            <a class="link" href="">
+              <div class="thumb">
+                <img
+                class="thumb-image"
+                  src="./images/portfolio-img/lab.jpg"
+                  alt="Картонная бирка PSD MockUp"
+                  width="370"
+                  height="294"
+                />
+                <div class="overlay">
+                  <p class="overlay-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Architecto, molestiae aliquam. Tempore voluptatem id
+                    suscipit. Hic vel consequuntur voluptates dolor. Lorem ipsum
+                    dolor sit amet.
+                  </p>
+                </div>
+              </div>
+              <div class="image-description">
+                <h2 class="list-title">Проект LAB</h2>
+                <p class="description">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <li class="card">
+            <a class="link" href="">
+              <div class="thumb">
+                <img
+                class="thumb-image"
+                  src="./images/portfolio-img/business.jpg"
+                  alt="Руки работающие за ноутбуком"
+                  width="370"
+                  height="294"
+                />
+                <div class="overlay">
+                  <p class="overlay-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Architecto, molestiae aliquam. Tempore voluptatem id
+                    suscipit. Hic vel consequuntur voluptates dolor. Lorem ipsum
+                    dolor sit amet.
+                  </p>
+                </div>
+              </div>
+              <div class="image-description">
+                <h2 class="list-title">Growing Business</h2>
+                <p class="description">Приложение</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="flex-container">
+        <address class="address">
+          <!-- Логотип -->
+          <a class="logo" href="./index.html" lang="en"
+            >Web <span class="footer-logo">Studio</span>
+          </a>
+          г. Киев, пр-т Леси Украинки, 26
+          <a class="link" href="mailto:info@example.com">info@example.com</a>
+          <a class="link" href="tel:+380991111111">+38 099 111 11 11</a>
+        </address>
+
+        <div class="social">
+          <p class="subtitle"><b>присоединяйтесь</b></p>
+          <ul class="social-list">
+            <li class="social-list-item">
+              <a class="social-links" href="" aria-label="Ссылка на Instagram">
+                <svg width="20" height="20">
+                  <use href="./images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-links" href="" aria-label="Ссылка на Twitter">
+                <svg width="20" height="20">
+                  <use href="./images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-links" href="" aria-label="Ссылка на Facebook">
+                <svg width="20" height="20">
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-links" href="" aria-label="Ссылка на LinkedIn">
+                <svg width="20" height="20">
+                  <use href="./images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mailing">
+          <p class="subtitle"><b>Подпишитесь на рассылку</b></p>
+          <form class="subscribe">
+            <input
+              class="subscribe-input"
+              type="email"
+              name="email-sub"
+              placeholder="E-mail"
+            />
+            <button class="btn" type="submit">
+              Подписаться
+              <svg class="icon-send" width="24" height="24">
+                <use href="./images/sprite.svg#send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

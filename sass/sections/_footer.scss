@@ -1,0 +1,102 @@
+.footer {
+    background-color: #2f303a;
+    color: $contrast-color;
+}
+  
+.flex-container {
+    @extend %container;
+    
+    display: flex;
+    align-items: baseline;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    margin-right: 69px;
+  
+    font-style: normal;
+}
+
+.footer .logo {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 0;
+}
+
+.footer .link {
+    display: inline-block;
+    margin-top: 9px;
+  
+    color: rgba(255, 255, 255, 0.6);
+  
+    font-weight: 400;
+    line-height: 1.71;
+  
+    transition: color 250ms $timing-function;
+
+    &:hover, &:focus {
+        color: $accent-color;
+    }
+}
+
+.social {
+    margin-right: 94px;
+}
+
+.subtitle {
+    margin-top: 0;
+    margin-bottom: 20px;
+  
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.social .social-links {
+    color: $contrast-color;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-list-item .social-links:hover,
+.social-list-item .social-links:focus {
+    color: $contrast-color;
+    background-color: $accent-color;
+}
+
+// Форма подписки
+.subscribe {
+    display: flex;
+}
+  
+.subscribe-input {
+    width: 358px;
+    padding: 15px 0 15px 16px;
+  
+    color: inherit;
+  
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  
+    background-color: inherit;
+  
+    &::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+.mailing .btn {
+    margin-left: 12px;
+    margin-right: 0;
+}
+  
+.icon-send {
+    margin-left: 10px;
+    fill: $contrast-color;
+}
+
+  

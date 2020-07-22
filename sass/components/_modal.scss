@@ -1,0 +1,82 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+  
+    opacity: 1;
+    transition: opacity 250ms $timing-function;
+ 
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+
+    min-height: 581px;
+    min-width: 528px;
+    padding: 40px;
+
+    background-color: $contrast-color;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+
+    transition: transform 250ms $timing-function;
+}
+
+.modal-title {
+    @extend %primary-title;
+
+    margin-bottom: 30px;
+    
+    font-size: 20px;
+    line-height: 1.15;
+}
+
+.close-button {
+    @include flexCenter;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: $contrast-color;
+  
+    cursor: pointer;
+}
+
+.icon-modal {
+    color: #000000;
+    fill: currentColor;
+    transition: color 250ms $timing-function;
+
+    .close-button:hover &,
+    .close-button:focus-within & {
+        color: $accent-color;
+    }
+}
+
+.modal-list {
+    @extend %list;
+
+    &-item {
+        margin-bottom: 28px;
+    }
+}
+
