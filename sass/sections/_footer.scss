@@ -2,15 +2,27 @@
     background-color: #2f303a;
     color: $contrast-color;
 }
+
+.footer-tablet-box {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+}
   
 .flex-container {
     @extend %container;
     
-    // display: flex;
-    // align-items: baseline;
     padding-top: 60px;
     padding-bottom: 60px;
     text-align: center;
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        align-items: baseline;
+        text-align: left;
+    }
 }
 
 .address {
@@ -80,11 +92,18 @@
 
 // Форма подписки
 .subscribe {
-    // display: flex;
+    @media screen and (min-width: $desktop) {
+        display: flex;
+
+        & .btn {
+            margin-left: 12px;
+            margin-right: 0;
+        }
+    }
 }
   
 .subscribe-input {
-    width: 100%;
+    width: 450px;
     margin-bottom: 20px;
     padding: 15px 0 15px 16px;
   
@@ -103,14 +122,10 @@
     }
 
     @media screen and (min-width: $desktop) {
+        margin-bottom: 0;
         width: 358px;
     }    
 }
-
-    // .mailing .btn {
-    //     margin-left: 12px;
-    //     margin-right: 0;
-    // }
   
 .icon-send {
     margin-left: 10px;

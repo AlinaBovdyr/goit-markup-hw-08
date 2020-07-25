@@ -89,8 +89,19 @@
 // Оформление чекбокса
 .checkbox-field {
     @include flexCenter;
-  
     margin-bottom: 30px;
+
+    font-size: 12px;
+    line-height: 1.17;
+    
+    @media screen and (min-width: $tablet) {
+        white-space: nowrap;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 .checkbox {
@@ -99,10 +110,11 @@
 
 .checkbox-label {
     @include flexCenter;
+    
 
     &::before {
         content: '';
-        margin-right: 7px;
+        margin-right: 8px;
 
         display: inline-block;
         width: 16px;
@@ -144,8 +156,12 @@
     content: '';
     position: absolute;
     display: block;
-    bottom: 5px;
+    bottom: 0;
     width: 100%;
    
     border-top: 1px solid $accent-color;
+
+    @media screen and (min-width: $desktop) {
+        bottom: 5px;
+    }
   }

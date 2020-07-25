@@ -12,7 +12,7 @@
 
     &-list {
         @extend %list;
-        // @include flexCenter(flex, space-between);
+        @include flexCenter(flex, space-between);
     }
 
     &-title {

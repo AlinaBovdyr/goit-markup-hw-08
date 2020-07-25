@@ -1,14 +1,35 @@
 .filters {
     @extend %list;
-    @include flexCenter;
-    margin-bottom: 50px;
+    @include flexCenter(flex, start);
+    flex-wrap: wrap;
+    margin-bottom: 40px;
 
-    &-item {
-        display: inline-block;
+    @media screen and (min-width: $tablet) {
+        justify-content: center;
+        flex-wrap: nowrap;
+        margin-bottom: 30px;
     }
-    
-    &-item + &-item {
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 50px;
+    }
+}
+
+.filters-item {
+    display: inline-block;
+
+    & + & {
         margin-left: 8px;
+    }
+
+    @media screen and (max-width: 767px) {
+        &:nth-child(-n + 5) {
+            margin-bottom: 15px;
+        }
+    
+        &:nth-child(4) {
+            margin-left: 0;
+        }
     }
 }
 
