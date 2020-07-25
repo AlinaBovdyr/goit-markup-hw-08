@@ -1216,7 +1216,7 @@ a {
 }
 
 .subscribe-input {
-  width: 450px;
+  width: 100%;
   margin-bottom: 20px;
   padding: 15px 0 15px 16px;
   color: inherit;
@@ -1249,6 +1249,12 @@ a {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-input {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
