@@ -5,6 +5,11 @@
     padding: 0;
     border: none;
     background-color: transparent;
+    cursor: pointer;
+
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
 }
 
 .icon-cross {
@@ -16,22 +21,41 @@
 }
 
 .menu-button.is-open .icon-cross {
-    display: block;
+    display: block;   
+}
+
+.icon-menu, .icon-cross {
+    color: #000000;
+    fill: currentColor;
+    transition: color 250ms $timing-function;
+
+    .menu-button:hover &, .menu-button:focus-within & {
+        color: $accent-color;
+    }
 }
 
 .menu-container {
-    display: none;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    @media screen and (max-width: 767px) {
+        display: none;
+        padding-top: 60px;
+        padding-bottom: 60px;
 
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
 
-    background-color: $contrast-color;
+        background-color: $contrast-color;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
+    
+        &.is-open {
+            display: block;
+            z-index: 9;
+        }
+    }
+
+    @media screen and (min-width: $tablet) {
+        @include flexCenter(flex, space-between);
+    }
 }
 
-.menu-container.is-open {
-    display: block;
-}

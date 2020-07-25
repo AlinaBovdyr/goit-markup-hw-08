@@ -1,3 +1,11 @@
+.activity-section {
+    display: none;
+
+    @media screen and (min-width: $desktop) {
+        display: block;
+    }
+}
+
 .activity {
     @extend %container;
     padding-bottom: 94px;

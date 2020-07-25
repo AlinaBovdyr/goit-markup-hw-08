@@ -10,14 +10,19 @@
     // align-items: baseline;
     padding-top: 60px;
     padding-bottom: 60px;
+    text-align: center;
 }
 
 .address {
     display: flex;
     flex-direction: column;
-    margin-right: 69px;
-  
+    margin-bottom: 60px;
+    
     font-style: normal;
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 69px;
+    }
 }
 
 .footer .logo {
@@ -28,7 +33,7 @@
 
 .footer .link {
     display: inline-block;
-    margin-top: 9px;
+    margin-top: 8px;
   
     color: rgba(255, 255, 255, 0.6);
   
@@ -40,10 +45,18 @@
     &:hover, &:focus {
         color: $accent-color;
     }
+
+    @media screen and (min-width: $desktop) {
+        margin-top: 9px;
+    }
 }
 
 .social {
-    margin-right: 94px;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 94px;
+    }
 }
 
 .subtitle {
@@ -71,7 +84,8 @@
 }
   
 .subscribe-input {
-    width: 358px;
+    width: 100%;
+    margin-bottom: 20px;
     padding: 15px 0 15px 16px;
   
     color: inherit;
@@ -87,12 +101,16 @@
         line-height: 1.25;
         color: rgba(255, 255, 255, 0.6);
     }
+
+    @media screen and (min-width: $desktop) {
+        width: 358px;
+    }    
 }
 
-.mailing .btn {
-    margin-left: 12px;
-    margin-right: 0;
-}
+    // .mailing .btn {
+    //     margin-left: 12px;
+    //     margin-right: 0;
+    // }
   
 .icon-send {
     margin-left: 10px;

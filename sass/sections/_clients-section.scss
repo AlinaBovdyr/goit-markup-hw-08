@@ -2,20 +2,34 @@
   @extend %container;
   @extend %containerPadding;
 
-  &-list {
-      @extend %list;
-      // @include flexCenter(flex, space-between);
-  }
-
   &-title {
       @extend %primary-title;
   }
 }
 
-.clients-icon {
-  // @include flexCenter;
+.clients-list {
+  @extend %list;
+  @include flexCenter;
+  flex-wrap: wrap;
+  margin: -15px;
 
-  width: 170px;
+  @media screen and (min-width: $desktop) {
+    flex-wrap: nowrap;
+  }
+}
+
+.clients-item {
+  width: calc((100% - 2*30px)/2);
+  margin: 15px;
+
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 3*30px)/3);
+  }
+}
+
+.clients-icon {
+  @include flexCenter;
+
   height: 90px;
   color: $icon-color;
   fill: currentColor;
