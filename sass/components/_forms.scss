@@ -93,8 +93,9 @@
 
     font-size: 12px;
     line-height: 1.17;
-    
-    @media screen and (min-width: $tablet) {
+    cursor: pointer;
+
+    @media screen and (min-width: $mobile) {
         white-space: nowrap;
     }
 
@@ -109,9 +110,8 @@
 }
 
 .checkbox-label {
-    @include flexCenter;
+    @include flexCenter(flex, start);
     
-
     &::before {
         content: '';
         margin-right: 8px;
@@ -122,6 +122,10 @@
 
         border: 2px solid $title-color;
         border-radius: 2px;
+    }
+
+    @media screen and (max-width: 479px) {
+        flex-wrap: wrap;
     }
 }
 
@@ -148,7 +152,7 @@
     position: relative;
     display: inline-block;
     margin-left: 5px;
-    
+
     color: $accent-color;
   }
   
