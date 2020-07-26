@@ -22,14 +22,20 @@
             class="menu-button"
             aria-expanded="false"
             aria-controls="menu-container"
-            data-menu-button>
-              <svg class="icon-menu-button"
-                width="40"
-                height="40"
-                aria-label="Переключатель мобильного меню">
-                  <use class="icon-cross" href="./images/sprite.svg#close-menu"></use>
-                  <use class="icon-menu" href="./images/sprite.svg#menu"></use>
-              </svg>
+            data-menu-button
+          >
+            <svg
+              class="icon-menu-button"
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="icon-cross"
+                href="./images/sprite.svg#close-menu"
+              ></use>
+              <use class="icon-menu" href="./images/sprite.svg#menu"></use>
+            </svg>
           </button>
           <div class="menu-container" data-menu>
             <ul class="site-nav">
@@ -43,7 +49,7 @@
                 <a class="link" href="">Контакты</a>
               </li>
             </ul>
-          
+
             <ul class="contacts">
               <li class="contacts-item">
                 <a class="link" href="mailto:info@devstudio.com">
@@ -55,7 +61,11 @@
               </li>
               <li class="contacts-item">
                 <a class="link" href="tel:+380961111111">
-                  <svg class="cotacts-icon smartphone" width="10" height="14.94">
+                  <svg
+                    class="cotacts-icon smartphone"
+                    width="10"
+                    height="14.94"
+                  >
                     <use href="./images/sprite.svg#smartphone"></use>
                   </svg>
                   +38 096 111 11 11
@@ -74,31 +84,57 @@
         <ul class="filters">
           <li class="filters-item">
             <label class="button">
-              <input class="button-input" name="filter" type="radio" value="all" checked />
+              <input
+                class="button-input"
+                name="filter"
+                type="radio"
+                value="all"
+                checked
+              />
               <span class="button-label">Все</span>
             </label>
           </li>
           <li class="filters-item">
             <label class="button">
-              <input class="button-input" name="filter" type="radio" value="web" />
+              <input
+                class="button-input"
+                name="filter"
+                type="radio"
+                value="web"
+              />
               <span class="button-label">Веб-сайты</span>
             </label>
           </li>
           <li class="filters-item">
             <label class="button">
-              <input class="button-input" name="filter" type="radio" value="apps" />
+              <input
+                class="button-input"
+                name="filter"
+                type="radio"
+                value="apps"
+              />
               <span class="button-label">Приложения</span>
             </label>
           </li>
           <li class="filters-item">
             <label class="button">
-              <input class="button-input" name="filter" type="radio" value="design" />
+              <input
+                class="button-input"
+                name="filter"
+                type="radio"
+                value="design"
+              />
               <span class="button-label">Дизайн</span>
             </label>
           </li>
           <li class="filters-item">
             <label class="button">
-              <input class="button-input" name="filter" type="radio" value="marketing" />
+              <input
+                class="button-input"
+                name="filter"
+                type="radio"
+                value="marketing"
+              />
               <span class="button-label">Маркетинг</span>
             </label>
           </li>
@@ -108,13 +144,27 @@
           <li class="card">
             <a class="link" href="">
               <div class="thumb">
-                <img
-                  class="thumb-image"
-                  src="./images/portfolio-img/techno.jpg"
-                  alt="Страница веб-сайта на экране ноутбука"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio-section/techno-450.webp  1x,
+                      ./images/portfolio-section/techno-900.webp  2x,
+                      ./images/portfolio-section/techno-1350.webp 3x,
+                      ./images/portfolio-section/techno-1800.webp 4x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    srcset="
+                      ./images/portfolio-section/techno-450.jpg  1x,
+                      ./images/portfolio-section/techno-900.jpg  2x,
+                      ./images/portfolio-section/techno-1350.jpg 3x,
+                      ./images/portfolio-section/techno-1800.jpg 4x
+                    "
+                    src="./images/portfolio-section/techno-450.jpg"
+                    alt="Страница веб-сайта на экране ноутбука"
+                  />
+                </picture>
                 <div class="overlay">
                   <p class="overlay-text">
                     Технокряк это современная площадка распространения
@@ -132,13 +182,27 @@
           <li class="card">
             <a class="link" href="">
               <div class="thumb">
-                <img
-                  class="thumb-image"
-                  src="./images/portfolio-img/poster.jpg"
-                  alt="Постер с двумя баскетболистами New Orlean vs Golden Star"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio-section/poster-450.webp  1x,
+                      ./images/portfolio-section/poster-900.webp  2x,
+                      ./images/portfolio-section/poster-1350.webp 3x,
+                      ./images/portfolio-section/poster-1800.webp 4x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    srcset="
+                      ./images/portfolio-section/poster-450.jpg  1x,
+                      ./images/portfolio-section/poster-900.jpg  2x,
+                      ./images/portfolio-section/poster-1350.jpg 3x,
+                      ./images/portfolio-section/poster-1800.jpg 4x
+                    "
+                    src="./images/portfolio-section/poster-450.jpg"
+                    alt="Постер с двумя баскетболистами New Orlean vs Golden Star"
+                  />
+                </picture>
                 <div class="overlay">
                   <p class="overlay-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -156,13 +220,27 @@
           <li class="card">
             <a class="link" href="">
               <div class="thumb">
-                <img
-                class="thumb-image"
-                  src="./images/portfolio-img/seafood.jpg"
-                  alt="Логотип ресторана Seafood"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio-section/seafood-450.webp  1x,
+                      ./images/portfolio-section/seafood-900.webp  2x,
+                      ./images/portfolio-section/seafood-1350.webp 3x,
+                      ./images/portfolio-section/seafood-1800.webp 4x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    srcset="
+                      ./images/portfolio-section/seafood-450.jpg  1x,
+                      ./images/portfolio-section/seafood-900.jpg  2x,
+                      ./images/portfolio-section/seafood-1350.jpg 3x,
+                      ./images/portfolio-section/seafood-1800.jpg 4x
+                    "
+                    src="./images/portfolio-section/seafood-450.jpg"
+                    alt="Логотип ресторана Seafood"
+                  />
+                </picture>
                 <div class="overlay">
                   <p class="overlay-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -181,13 +259,27 @@
           <li class="card">
             <a class="link" href="">
               <div class="thumb">
-                <img
-                class="thumb-image"
-                  src="./images/portfolio-img/prime.jpg"
-                  alt="Большие черные беспроводные наушники"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio-section/prime-450.webp  1x,
+                      ./images/portfolio-section/prime-900.webp  2x,
+                      ./images/portfolio-section/prime-1350.webp 3x,
+                      ./images/portfolio-section/prime-1800.webp 4x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    srcset="
+                      ./images/portfolio-section/prime-450.jpg  1x,
+                      ./images/portfolio-section/prime-900.jpg  2x,
+                      ./images/portfolio-section/prime-1350.jpg 3x,
+                      ./images/portfolio-section/prime-1800.jpg 4x
+                    "
+                    src="./images/portfolio-section/prime-450.jpg"
+                    alt="Большие черные беспроводные наушники"
+                  />
+                </picture>
                 <div class="overlay">
                   <p class="overlay-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -206,13 +298,27 @@
           <li class="card">
             <a class="link" href="">
               <div class="thumb">
-                <img 
-                class="thumb-image"
-                  src="./images/portfolio-img/boxes.jpg"
-                  alt="Две маленькие фирменные коробки на белом фоне"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio-section/boxes-450.webp  1x,
+                      ./images/portfolio-section/boxes-900.webp  2x,
+                      ./images/portfolio-section/boxes-1350.webp 3x,
+                      ./images/portfolio-section/boxes-1800.webp 4x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    srcset="
+                      ./images/portfolio-section/boxes-450.jpg  1x,
+                      ./images/portfolio-section/boxes-900.jpg  2x,
+                      ./images/portfolio-section/boxes-1350.jpg 3x,
+                      ./images/portfolio-section/boxes-1800.jpg 4x
+                    "
+                    src="./images/portfolio-section/boxes-450.jpg"
+                    alt="Две маленькие фирменные коробки на белом фоне"
+                  />
+                </picture>
                 <div class="overlay">
                   <p class="overlay-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -231,13 +337,27 @@
           <li class="card">
             <a class="link" href="">
               <div class="thumb">
-                <img
-                class="thumb-image"
-                  src="./images/portfolio-img/inspiration.jpg"
-                  alt="Дизайн сайта на экране монитора"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio-section/inspiration-450.webp  1x,
+                      ./images/portfolio-section/inspiration-900.webp  2x,
+                      ./images/portfolio-section/inspiration-1350.webp 3x,
+                      ./images/portfolio-section/inspiration-1800.webp 4x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    srcset="
+                      ./images/portfolio-section/inspiration-450.jpg  1x,
+                      ./images/portfolio-section/inspiration-900.jpg  2x,
+                      ./images/portfolio-section/inspiration-1350.jpg 3x,
+                      ./images/portfolio-section/inspiration-1800.jpg 4x
+                    "
+                    src="./images/portfolio-section/inspiration-450.jpg"
+                    alt="Дизайн сайта на экране монитора"
+                  />
+                </picture>
                 <div class="overlay">
                   <p class="overlay-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -256,13 +376,27 @@
           <li class="card">
             <a class="link" href="">
               <div class="thumb">
-                <img
-                class="thumb-image"
-                  src="./images/portfolio-img/limited-edition.jpg"
-                  alt="Открытый глянцевый журнал"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio-section/limited-edition-450.webp  1x,
+                      ./images/portfolio-section/limited-edition-900.webp  2x,
+                      ./images/portfolio-section/limited-edition-1350.webp 3x,
+                      ./images/portfolio-section/limited-edition-1800.webp 4x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    srcset="
+                      ./images/portfolio-section/limited-edition-450.jpg  1x,
+                      ./images/portfolio-section/limited-edition-900.jpg  2x,
+                      ./images/portfolio-section/limited-edition-1350.jpg 3x,
+                      ./images/portfolio-section/limited-edition-1800.jpg 4x
+                    "
+                    src="./images/portfolio-section/limited-edition-450.jpg"
+                    alt="Открытый глянцевый журнал"
+                  />
+                </picture>
                 <div class="overlay">
                   <p class="overlay-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -281,13 +415,27 @@
           <li class="card">
             <a class="link" href="">
               <div class="thumb">
-                <img
-                class="thumb-image"
-                  src="./images/portfolio-img/lab.jpg"
-                  alt="Картонная бирка PSD MockUp"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio-section/lab-450.webp  1x,
+                      ./images/portfolio-section/lab-900.webp  2x,
+                      ./images/portfolio-section/lab-1350.webp 3x,
+                      ./images/portfolio-section/lab-1800.webp 4x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    srcset="
+                      ./images/portfolio-section/lab-450.jpg  1x,
+                      ./images/portfolio-section/lab-900.jpg  2x,
+                      ./images/portfolio-section/lab-1350.jpg 3x,
+                      ./images/portfolio-section/lab-1800.jpg 4x
+                    "
+                    src="./images/portfolio-section/lab-450.jpg"
+                    alt="Картонная бирка PSD MockUp"
+                  />
+                </picture>
                 <div class="overlay">
                   <p class="overlay-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -306,13 +454,27 @@
           <li class="card">
             <a class="link" href="">
               <div class="thumb">
-                <img
-                class="thumb-image"
-                  src="./images/portfolio-img/business.jpg"
-                  alt="Руки работающие за ноутбуком"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio-section/business-450.webp  1x,
+                      ./images/portfolio-section/business-900.webp  2x,
+                      ./images/portfolio-section/business-1350.webp 3x,
+                      ./images/portfolio-section/business-1800.webp 4x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    srcset="
+                      ./images/portfolio-section/business-450.jpg  1x,
+                      ./images/portfolio-section/business-900.jpg  2x,
+                      ./images/portfolio-section/business-1350.jpg 3x,
+                      ./images/portfolio-section/business-1800.jpg 4x
+                    "
+                    src="./images/portfolio-section/business-450.jpg"
+                    alt="Руки работающие за ноутбуком"
+                  />
+                </picture>
                 <div class="overlay">
                   <p class="overlay-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -349,7 +511,11 @@
             <p class="subtitle"><b>присоединяйтесь</b></p>
             <ul class="social-list">
               <li class="social-list-item">
-                <a class="social-links" href="" aria-label="Ссылка на Instagram">
+                <a
+                  class="social-links"
+                  href=""
+                  aria-label="Ссылка на Instagram"
+                >
                   <svg width="20" height="20">
                     <use href="./images/sprite.svg#instagram"></use>
                   </svg>

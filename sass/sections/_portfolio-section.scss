@@ -1,121 +1,115 @@
 .portfolio {
-    @extend %container;
-    @extend %containerPadding;
+  @extend %container;
+  @extend %containerPadding;
 
-    &-title {
-        @extend %visually-hidden;
-    }
+  &-title {
+    @extend %visually-hidden;
+  }
 }
 
 .cards-list {
-    @extend %list;
+  @extend %list;
 
-    @media screen and (min-width: $tablet) {
-        margin: -15px;
-        @include flexCenter(flex, start);
-        flex-wrap: wrap;
-    }
+  @media screen and (min-width: $tablet) {
+    margin: -15px;
+    @include flexCenter(flex, start);
+    flex-wrap: wrap;
+  }
 }
 
 .card {
-    margin-bottom: 30px;
-    width: 100%;
-    
-    box-shadow: none;
-    transition: box-shadow 250ms $timing-function;
+  margin-bottom: 30px;
+  width: 100%;
 
-    @media screen and (min-width: $tablet) {
-        margin: 15px;
-        width: calc((100% - 2 * 30px) / 2);
-    }
+  box-shadow: none;
+  transition: box-shadow 250ms $timing-function;
 
-    @media screen and (min-width: $desktop) {
-        width: calc((100% - 3 * 30px) / 3);
-    }
+  @media screen and (min-width: $tablet) {
+    margin: 15px;
+    width: calc((100% - 2 * 30px) / 2);
+  }
 
-    &:hover, &:focus-within {
-        box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
-            0px 1px 1px rgba(0, 0, 0, 0.12);
-    }
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 3 * 30px) / 3);
+  }
+
+  &:hover,
+  &:focus-within {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      0px 1px 1px rgba(0, 0, 0, 0.12);
+  }
 }
 
 .thumb {
-    position: relative;
-    overflow: hidden;
-
-    &-image {
-        display: block;
-        max-width: 100%;
-        height: auto; 
-    }
+  position: relative;
+  overflow: hidden;
 }
 
 .portfolio .link {
-    color: $text-color;
-    font-weight: 400;
-    line-height: 1.88;
+  color: $text-color;
+  font-weight: 400;
+  line-height: 1.88;
 }
 
 .image-description {
-    padding: 20px 24px;
-  
-    border-right: 1px solid #eeeeee;
-    border-bottom: 1px solid #eeeeee;
-    border-left: 1px solid #eeeeee;
+  padding: 20px 24px;
+
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .list-title {
-    @extend %primary-title;
-    margin-bottom: 4px;
+  @extend %primary-title;
+  margin-bottom: 4px;
 
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    text-align: left;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-align: left;
 
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .description {
-    margin: 0;
+  margin: 0;
 
-    font-size: 16px;
+  font-size: 16px;
 }
 
 // Оформление оверлея
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-  
-    width: 100%;
-    height: 100%;
-    background-color: rgba(33, 150, 243, 0.9);
-  
-    transform: translateY(100%);
-    transition: transform 250ms $timing-function;
+  position: absolute;
+  top: 0;
+  left: 0;
 
-  
-    .card:hover &,
-    .card:focus-within & {
-        transform: translateY(0);
-    }
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(100%);
+  transition: transform 250ms $timing-function;
+
+  .card:hover &,
+  .card:focus-within & {
+    transform: translateY(0);
+  }
 }
 
 .overlay-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  
-    padding: 0px 24px;
-    margin: 0;
-    width: 100%;
-  
-    color: $contrast-color;
-  
-    font-size: 18px;
-    line-height: 1.56;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 0px 24px;
+  margin: 0;
+  width: 100%;
+
+  color: $contrast-color;
+
+  font-size: 18px;
+  line-height: 1.56;
 }

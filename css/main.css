@@ -1514,10 +1514,6 @@ img {
   position: relative;
 }
 
-.box-image {
-  display: block;
-}
-
 .activity-item-title {
   position: absolute;
   bottom: 0;
@@ -1576,10 +1572,6 @@ img {
     width: calc((100% - 3 * 30px) / 4);
     margin: 0;
   }
-}
-
-.photo {
-  display: block;
 }
 
 .member-profile {
