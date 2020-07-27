@@ -700,20 +700,25 @@
         </div>
 
         <div class="mailing">
-          <p class="subtitle"><b>Подпишитесь на рассылку</b></p>
           <form class="subscribe">
-            <input
-              class="subscribe-input"
-              type="email"
-              name="email-sub"
-              placeholder="E-mail"
-            />
-            <button class="btn" type="submit">
-              Подписаться
-              <svg class="icon-send" width="24" height="24">
-                <use href="./images/sprite.svg#send"></use>
-              </svg>
-            </button>
+            <label for="email">
+              <p class="subtitle"><b>Подпишитесь на рассылку</b></p>
+            </label>
+            <div class="subscribe-form">
+              <input
+                class="subscribe-input"
+                type="email"
+                id="email"
+                name="email-sub"
+                placeholder="E-mail"
+              />
+              <button class="btn" type="submit">
+                Подписаться
+                <svg class="icon-send" width="24" height="24">
+                  <use href="./images/sprite.svg#send"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>

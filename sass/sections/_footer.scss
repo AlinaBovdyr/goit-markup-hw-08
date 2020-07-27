@@ -1,139 +1,143 @@
 .footer {
-    background-color: #2f303a;
-    color: $contrast-color;
+  background-color: #2f303a;
+  color: $contrast-color;
 }
 
 .footer-tablet-box {
-    @media screen and (min-width: $tablet) {
-        display: flex;
-        justify-content: space-around;
-        align-items: baseline;
-    }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
 }
-  
-.flex-container {
-    @extend %container;
-    
-    padding-top: 60px;
-    padding-bottom: 60px;
-    text-align: center;
 
-    @media screen and (min-width: $desktop) {
-        display: flex;
-        align-items: baseline;
-        text-align: left;
-    }
+.flex-container {
+  @extend %container;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: baseline;
+    text-align: left;
+  }
 }
 
 .address {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 60px;
-    
-    font-style: normal;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
 
-    @media screen and (min-width: $desktop) {
-        margin-right: 69px;
-    }
+  font-style: normal;
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 69px;
+  }
 }
 
 .footer .logo {
-    display: inline-block;
-    margin-bottom: 20px;
-    margin-right: 0;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-right: 0;
 }
 
 .footer .link {
-    display: inline-block;
-    margin-top: 8px;
-  
-    color: rgba(255, 255, 255, 0.6);
-  
-    font-weight: 400;
-    line-height: 1.71;
-  
-    transition: color 250ms $timing-function;
+  display: inline-block;
+  margin-top: 8px;
 
-    &:hover, &:focus {
-        color: $accent-color;
-    }
+  color: rgba(255, 255, 255, 0.6);
 
-    @media screen and (min-width: $desktop) {
-        margin-top: 9px;
-    }
+  font-weight: 400;
+  line-height: 1.71;
+
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 9px;
+  }
 }
 
 .social {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 
-    @media screen and (min-width: $desktop) {
-        margin-right: 94px;
-    }
+  @media screen and (min-width: $desktop) {
+    margin-right: 94px;
+  }
 }
 
 .subtitle {
-    margin-top: 0;
-    margin-bottom: 20px;
-  
-    line-height: 1.14;
-    text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  line-height: 1.14;
+  text-transform: uppercase;
 }
 
 .social .social-links {
-    color: $contrast-color;
-    background-color: rgba(255, 255, 255, 0.1);
+  color: $contrast-color;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .social-list-item .social-links:hover,
 .social-list-item .social-links:focus {
-    color: $contrast-color;
-    background-color: $accent-color;
+  color: $contrast-color;
+  background-color: $accent-color;
 }
 
 // Форма подписки
 .subscribe {
-    @media screen and (min-width: $desktop) {
-        display: flex;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: column;
 
-        & .btn {
-            margin-left: 12px;
-            margin-right: 0;
-        }
+    &-form {
+      display: flex;
     }
+
+    & .btn {
+      margin-left: 12px;
+      margin-right: 0;
+    }
+  }
 }
-  
+
 .subscribe-input {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 15px 0 15px 16px;
-  
-    color: inherit;
-  
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-  
-    background-color: inherit;
-  
-    &::placeholder {
-        font-size: 16px;
-        line-height: 1.25;
-        color: rgba(255, 255, 255, 0.6);
-    }
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 15px 0 15px 16px;
 
-    @media screen and (min-width: $tablet) {
-        width: 450px;
-    } 
-    
-    @media screen and (min-width: $desktop) {
-        margin-bottom: 0;
-        width: 358px;
-    }    
+  color: inherit;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  background-color: inherit;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0;
+    width: 358px;
+  }
 }
-  
+
 .icon-send {
-    margin-left: 10px;
-    fill: $contrast-color;
+  margin-left: 10px;
+  fill: $contrast-color;
 }
-
-  
