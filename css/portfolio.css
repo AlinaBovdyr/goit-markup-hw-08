@@ -1324,6 +1324,7 @@ img {
 .thumb {
   position: relative;
   overflow: hidden;
+  height: 294px;
 }
 
 .portfolio .link {
