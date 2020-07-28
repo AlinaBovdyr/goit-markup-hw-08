@@ -1,69 +1,62 @@
 .filters {
-    @extend %list;
-    @include flexCenter(flex, start);
-    flex-wrap: wrap;
-    margin-bottom: 40px;
+  @extend %list;
+  @include flexCenter(flex, start);
+  flex-wrap: wrap;
+  margin-bottom: 40px - 15px;
 
-    @media screen and (min-width: $tablet) {
-        justify-content: center;
-        flex-wrap: nowrap;
-        margin-bottom: 30px;
-    }
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-bottom: 30px;
+  }
 
-    @media screen and (min-width: $desktop) {
-        margin-bottom: 50px;
-    }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 }
 
 .filters-item {
-    display: inline-block;
+  display: inline-block;
 
-    & + & {
-        margin-left: 8px;
-    }
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 
-    @media screen and (max-width: 767px) {
-        &:nth-child(-n + 5) {
-            margin-bottom: 15px;
-        }
-    
-        &:nth-child(4) {
-            margin-left: 0;
-        }
-    }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
 }
 
-.button { 
-    font-size: 16px;
-    line-height: 1.63;
+.button {
+  font-size: 16px;
+  line-height: 1.63;
 
-    &-input {
-        @extend %visually-hidden;
-    }
+  &-input {
+    @extend %visually-hidden;
+  }
 }
 
 .button-label {
-    display: inline-block;
-    padding: 6px 22px;
-    border: transparent;
-    border-radius: 4px;
-    cursor: pointer;
-  
-    color: $title-color;
-    background-color: $secondary-background-color;
-  
-    font-weight: 500;
-  
-    transition: color 250ms $timing-function,
-    background-color 250ms $timing-function,
-    box-shadow 250ms $timing-function;
+  display: inline-block;
+  padding: 6px 22px;
+  border: transparent;
+  border-radius: 4px;
+  cursor: pointer;
 
-    .button-input:checked + &,
-    .filters-item:hover &,
-    .filters-item:focus & {
-        color: $contrast-color;
-        background-color: $accent-color;
-        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
-            0px 3px 1px rgba(0, 0, 0, 0.1);
-    }
+  color: $title-color;
+  background-color: $secondary-background-color;
+
+  font-weight: 500;
+
+  transition: color 250ms $timing-function,
+    background-color 250ms $timing-function, box-shadow 250ms $timing-function;
+
+  .button-input:checked + &,
+  .filters-item:hover &,
+  .filters-item:focus & {
+    color: $contrast-color;
+    background-color: $accent-color;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 3px 1px rgba(0, 0, 0, 0.1);
+  }
 }

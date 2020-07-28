@@ -1738,6 +1738,7 @@ img {
 }
 
 .subtitle {
+  display: block;
   margin-top: 0;
   margin-bottom: 20px;
   line-height: 1.14;
@@ -1753,10 +1754,6 @@ img {
 .social-list-item .social-links:focus {
   color: #ffffff;
   background-color: #2196f3;
-}
-
-.subscribe-form {
-  display: block;
 }
 
 @media screen and (min-width: 1200px) {
