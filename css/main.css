@@ -1129,7 +1129,7 @@ img {
   background-origin: border-box;
 }
 
-.focus-box:focus-within .checkbox-label::before {
+.checkbox-field:focus-within .checkbox-label::before {
   border-radius: 2px;
   -webkit-box-shadow: 0 0 0 2px #2196f3;
           box-shadow: 0 0 0 2px #2196f3;
@@ -1164,6 +1164,15 @@ img {
 
 .page-header {
   border-bottom: 1px solid #ececec;
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 1199px) {
+  .page-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
 }
 
 .header {
@@ -1348,10 +1357,23 @@ img {
 }
 
 .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 60px;
+  padding-right: 60px;
   max-width: 1600px;
   height: 400px;
-  padding-top: 118px;
-  padding-bottom: 118px;
   outline: 1px solid black;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../images/header-mobile.jpg");
   background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/header-mobile.jpg");
@@ -1384,8 +1406,6 @@ img {
 @media screen and (min-width: 769px) {
   .hero {
     height: 600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../images/header-desktop.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/header-desktop.jpg");
   }

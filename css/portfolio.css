@@ -915,6 +915,15 @@ img {
 
 .page-header {
   border-bottom: 1px solid #ececec;
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 1199px) {
+  .page-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
 }
 
 .header {
